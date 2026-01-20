@@ -21,7 +21,7 @@ if not GEMINI_API_KEY:
     st.stop()
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
+model = genai.GenerativeModel('gemini-flash-lite-latest')
 
 # Input UI
 with st.container():
@@ -60,3 +60,4 @@ with st.container():
 # Footer
 st.markdown("---")
 st.caption("Powered by Google Gemini AI | Built with Streamlit")
+
